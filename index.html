@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.js"></script>
+    <script type="text/javascript" src="./js/funkcje.js"></script>
+    <title>Komunikator Artura</title>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="login" class="centered">
+            <h2>login</h2>
+            <form class="form-inline">
+                <table>
+                    <tr>
+                        <td>login</td>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Haslo</td>
+                        <td>
+                            <input type="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button type="button" id="btnLoguj">Loguj</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <button id="btnNowy">Nowy login</button>
+        </div>
+        <div id="newlogin" class="centered hidden-xs-up">
+            <h2>Nowy login</h2>
+            <table>
+                <tr>
+                    <td>login</td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Haslo</td>
+                    <td>
+                        <input type="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Powtorz haslo</td>
+                    <td>
+                        <input type="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="button" Id="btnStworz">Wyslij</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="chat" class="centered hidden-xs-up">
+            <div class="container-fluid">
+                <span class="label label-primary" id="Witaj">Witaj</span>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col-xs-4">
+                        <button id="btnWyloguj">Wyloguj</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        Uzytkownicy
+                        <table>
+                            <tr>
+                                <td>
+                                    <p class="border rounded">Uzytkownik 1</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="rounded">Uzytkownik 2</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="rounded">Uzytkownik 3</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col">
+                        <div class="row"></div>
+                        <div class="row">
+                            <div class="col">
+                                Wpisz wiadomosc:
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" style="width: 100%" id="wiadomosc" />
+                            </div>
+                            <div class="col-xs-4">
+                                <button id="btnWyslij">Wyslij wiadomosc</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
